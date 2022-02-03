@@ -23,8 +23,16 @@ const biciclette = [
 
 ];
 
+const pesoBici = []
 
-const [bicicletta_uno, bicicletta_uno, bicicletta_uno, bicicletta_uno,] = biciclette;
+for (let i= 0; i < biciclette.length; i++){
+   let bicicletta = biciclette[i];
 
-console.log(bicicletta_uno, bicicletta_uno, bicicletta_uno, bicicletta_uno);
+   const {peso} = bicicletta;
+   console.log(peso)
+   pesoBici.push(bicicletta.peso)
+}
 
+console.log(pesoBici)
+
+console.log("La bici che pesa di meno è la 1, con un peso di " + Math.min(...pesoBici) + "kg")

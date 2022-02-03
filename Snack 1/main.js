@@ -24,7 +24,7 @@ const biciclette = [
 ];
 
 
-const [bicicletta_uno, bicicletta_due, bicicletta_tre, bicicletta_quattro] = biciclette;
+const [bicicletta_uno, bicicletta_uno, bicicletta_uno, bicicletta_uno,] = biciclette;
 
-console.log(bicicletta_uno);
+console.log(bicicletta_uno, bicicletta_uno, bicicletta_uno, bicicletta_uno);
 

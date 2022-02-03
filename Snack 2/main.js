@@ -33,7 +33,7 @@ const squadreDiCalcio = [
 ];
 const soloNomiEFalli = [];
 
-for(i=0; i < squadreDiCalcio.length; i++){
+for(let i=0; i < squadreDiCalcio.length; i++){
 
     let squadra = squadreDiCalcio[i]
     const {nome, falli_subiti} = squadra;
@@ -50,43 +50,4 @@ console.log(soloNomiEFalli);
 
 
 
-
-// const nomiSquadre =[];
-
-// const falliSquadra =[]
-
-// for(i=0; i < squadreDiCalcio.length; i++){
-
-//     let squadra = squadreDiCalcio[i];
-//     console.log(squadra.nome);
-//     let nomeSquadra = squadra.nome;
-
-//     nomiSquadre.push(nomeSquadra);
-//     let falloSquadra = squadra["falli_subiti"];
-//     falliSquadra.push(falloSquadra);
-// }
-
-
-// console.log(nomiSquadre)
-
-// console.log(falliSquadra)
-
-
-// const nomiEfalli = [...nomiSquadre, ...falliSquadra];
-
-// console.log(nomiEfalli)
-
-
-
-
-
-
-
-
-
-
-
-// const [Milan, Juve, Inter, Roma, Cagliari] = squadreDiCalcio;
-
-// console.log(squadreDiCalcio)
 

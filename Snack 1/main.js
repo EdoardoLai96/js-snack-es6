@@ -2,7 +2,7 @@ const biciclette = [
 
     {   
        nome: "Bici 1",
-       peso: 10 
+       peso: 20 
     },
 
     {   
@@ -19,20 +19,30 @@ const biciclette = [
        nome: "Bici 4",
        peso: 16 
     },
-
-
 ];
 
-const pesoBici = []
+
+let biciPiuLeggera = biciclette[0];
+
 
 for (let i= 0; i < biciclette.length; i++){
    let bicicletta = biciclette[i];
 
-   const {peso} = bicicletta;
-   console.log(peso)
-   pesoBici.push(bicicletta.peso)
+   if(biciPiuLeggera.peso > bicicletta.peso){
+      biciPiuLeggera = bicicletta;
+
+   }
+
 }
 
-console.log(pesoBici)
+console.log(biciPiuLeggera);
 
-console.log("La bici che pesa di meno è la 1, con un peso di " + Math.min(...pesoBici) + "kg")
+const {nome , peso} = biciPiuLeggera;
+
+let myId = document.getElementById("myId");
+
+myId.innerHTML = (`la bici che pesa di meno è la ${nome} e pesa ${peso}`);
+
+// console.log(pesoBici)
+
+// console.log("La bici che pesa di meno è la 1, con un peso di " + Math.min(...pesoBici) + "kg")
